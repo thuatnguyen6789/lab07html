@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey1</title>
+</head>
+<body>
+<form action="http://www.example.com/survey1.php">
+<fieldset>
+<legend>Your Details:</legend>
+    <label>Name:<input type="text" name="name" /></label><br/>
+    <br>
+    <label>Email:<input type="text" name="email" /></label>
+</fieldset>
+    <fieldset>
+        <legend>Your Review:</legend>
+        How did you hear about us?
+        <select name="selection" size="1" multiple="multiple">
+            <option value="google" selected="selected">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advert">Advert</option>
+            <option value="other">Other</option>
+        </select>
+<p>Would you visit again?
+<br/>
+    <input type="radio" name="genre" value="yes"/> Yes
+    <input type="radio" name="genre" value="no" /> No
+    <input type="radio" name="genre" value="maybe"/> Maybe
+</p>
+        <p>Comments:</p>
+            <textarea name="comments" cols="50" rows="4" placeholder="Enter your comments...">
+    </textarea>
+        <br/>
+        <input type="checkbox" name="service" value="sign" checked /> Sign me up for email updates
+        <br/>
+        <input type="submit" name="review" value="Submit review" />
+    </fieldset>
+</form>
+</body>
+</html>
